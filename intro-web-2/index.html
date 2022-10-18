@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introducción web 2</title>
+    <!-- Para hacer links <link rel="stylesheet" href="miestilo.css">
+          <link rel="stylesheet" href="stilos/miestilo.css"> -->
+</head>
+<!--etiquetas semanticas de body-->
+<body>
+    <header>
+       <h1> Este es el título</h1>
+    </header>
+ <!-- shft + alt + A = para hacer comentarios -->   
+    <nav>
+       <h3>
+        <a href="./mishtmls/principal.html"> Principal </a>
+         | <a href="./mishtmls/fotos.html"> Fotos </a>| Videos | Contacto
+        </h3>
+    </nav>
+    <main>
+        <section>
+           <p> Artículos </p> <!-- Define el párrafo -->
+            <pre> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> <!-- Salto de línea -->Provident ad quod laudantium, repudiandae inventore sunt enim soluta facere, odio voluptatem pariatur? Inventore perspiciatis eaque tenetur, tempora totam quis illo quos.    </pre>
+        <!-- <em> = enfasis, <i> = italicas, <strong> = negritas -->
+        <figure>
+            <img src="./img/C. del elef.png" alt="Cerro del elefante, en Hidalgo." width="550" height="400">
+        <figcaption>Cerro del elefante.</figcaption>
+        </figure> 
+        </section>
+        <aside>
+            Cita del artículo
+          <!-- Lista sin orden. Aparece en forma de puntos -->
+            <ul>
+                <li>
+                    Lunes
+                </li>
+                <li>
+                    Martes
+                </li>
+                <li>
+                    Miércoles
+                </li>
+            </ul>
+            <!-- Lista ordenada. Aparece enlistada con números de menor a mayor, pero podemos usar TYPE para cambiar el modo de enlistar; REVERSED seguido si quieres que salga de mayor a menor -->
+        ;<ol>
+            <li>
+                Enero
+            </li>
+            <li>
+                Febrero
+            </li>
+        </ol>
+        <!-- Para una lista que se abra y cierre, se coloca DETAILS, título entre SUMMARY -->
+        
+    <table>
+      <!-- tr para definir una fila de la tabla, td para celdas/columnas, th para columnas de encabezado, colspan nos ayuda a poner un título que abarque las columnas (se pone la cantidad de celdas) -->  <tr>
+            <td> 2 </td>
+            <td> 4 </td>
+            <td> 6 </td>
+        </tr>
+    </table>
+    </aside>
+    </main>
+    <footer> 
+        &copy Derechos reservados 2022
+    </footer>
+    <!-- Link al final <script src="/misjs/mifuncion.js"> -->
+</body>
+</html>
