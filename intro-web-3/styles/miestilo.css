@@ -1,0 +1,29 @@
+p {
+    color:rgb(82, 82, 190) ;
+}
+
+pre{
+    color: peachpuff;
+}
+/* Selector universal */
+
+*{
+    color:black;
+}
+span{
+    color: cadetblue;
+}
+/* Selector de clase */
+
+.titulo{
+    color: aquamarine;
+}
+/* Barra lateral flotante a la derecha */
+.bl{
+    float:right;
+
+}
+/* Selector ID => revisar especificidad, que afecta al orden en que lo toma en cuenta el navegador  
+# selector{
+    color: beige;
+}*/

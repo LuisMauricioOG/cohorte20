@@ -1,0 +1,13 @@
+#titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(120, 42, 142);
+    border: 8px solid green;
+
+    width: 200px;
+    height: 120px;
+    overflow: scroll;
+
+    margin: 50px;
+    padding: 20px;
+}
