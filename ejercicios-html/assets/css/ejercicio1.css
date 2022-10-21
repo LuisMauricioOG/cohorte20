@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(204, 199, 192);
+}
+.titulo{
+    font-size: xx-large ;
+}
+.links{
+    font-size: large;
+    background-color: hsl(84, 79%, 53%);
+}
+#main{
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -20px;
+}
+#related{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
