@@ -1,26 +1,18 @@
-.titulo{ 
-    color: rgba(196, 48, 48, 0.842);
+/* Primero, usaba css para subrayar. Luego, hice cambios y dejó de funcionar lo que tenía. Así que decidí usar style porque es un texto sencillo. 
+NOTA: repasar prioridad en especificidad 
+#parr1{
+    color: rgb(59, 59, 243);
 }
-#internet{
-    color: rgba(196, 48, 48, 0.842);
-}
-#cambio1{
+em{
     color: blue;
-    font-style: italic;
     background-color: beige;
 }
-p{
+#parr2{
     color: gray;
 }
-#cambio2{
+i{
     color: yellow;
-    font-style: italic;
     background-color: black;
 
 }
-#html{
-    color: rgba(196, 48, 48, 0.842);
-}
-#css{
-    color: rgba(196, 48, 48, 0.842);
-}
+*/
