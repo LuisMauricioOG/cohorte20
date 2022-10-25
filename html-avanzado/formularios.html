@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="/assets/css/formularios.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+
+<!-- Englobar un formulario -->  
+ <!--   <input type="text">
+    <input type="button" value="Dar click">
+ --> 
+ <!-- action ayuda a indicaar lo que queremos que haga con esa infor -->
+
+    <form >
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre"
+            placeholder="Mauricio" required> 
+            <!-- required = ; value = ..-->
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+            placeholder="mauricio@gmail.com" required>
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
+            <input class="campo" type="password" name="password" id="password"
+            placeholder="1234" required>
+        </div>
+        <div>
+            <label for="recordar">Recordarme</label>
+            <input type="checkbox" name="recordar" id="recordar">
+        </div>
+        <div>
+            <input type="submit" value="Enviar" id="bth">
+        </div>
+    </form>
+    
+</body>
+</html>

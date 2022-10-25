@@ -1,0 +1,23 @@
+form{
+    display: inline-block;
+    color: white;
+    width: 530px;
+    background-color: green;
+    border-color: rgb(76, 226, 231);
+}
+label{
+    display: inline-block;
+    width: 80px;
+
+}
+.campo{
+    width: 150px;
+}
+#bth{
+    background-color: rgb(148, 144, 144);
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: 150;
+}
+/* hover */

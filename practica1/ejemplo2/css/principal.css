@@ -1,0 +1,26 @@
+.titulo{ 
+    color: rgba(196, 48, 48, 0.842);
+}
+#internet{
+    color: rgba(196, 48, 48, 0.842);
+}
+#cambio1{
+    color: blue;
+    font-style: italic;
+    background-color: beige;
+}
+p{
+    color: gray;
+}
+#cambio2{
+    color: yellow;
+    font-style: italic;
+    background-color: black;
+
+}
+#html{
+    color: rgba(196, 48, 48, 0.842);
+}
+#css{
+    color: rgba(196, 48, 48, 0.842);
+}

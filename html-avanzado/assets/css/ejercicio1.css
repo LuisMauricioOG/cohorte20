@@ -1,0 +1,30 @@
+form{
+    display: inline-block;
+    color: white;
+    width: 450px;
+    background-color: green;
+    border: 7px solid rgb(76, 226, 231);
+    border-radius: 10px;
+}
+label{
+    display: inline-block;
+    width: 80px;
+}
+input{
+    border-color: red;
+    border-width: 2.5px;
+}
+div{
+    text-align: center;
+}
+#bth{
+    background-color: rgb(233, 222, 222);
+    border: none;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-weight: 150;
+}
+p{
+    font-size: large;
+    text-indent: 55px;
+}
