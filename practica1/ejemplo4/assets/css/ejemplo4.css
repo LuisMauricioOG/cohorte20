@@ -1,0 +1,15 @@
+*{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* buscar tipo de letra*/
+h2{
+    color: blue;
+    background-color: rgb(194, 194, 194);
+    /* que abarque toda la pag. */
+}
+h3{
+    color: brown;
+}
+li{
+    font-style: italic;
+}
