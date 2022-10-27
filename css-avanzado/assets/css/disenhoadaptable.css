@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 500px){
+.padre{
+    border: 3px dashed green;
+    display: flex; /* Se alinean los bloques */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.logo{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+}
+.cuadro{
+    width: 100px;
+    height: 100px;
+}
+
+.uno{
+    background-color: aquamarine;
+}
+
+.dos{
+    background-color: peachpuff;
+}
+
+.tres{
+    background-color: greenyellow;
+}
+/* row - fila
+ Justify-content - vertical
+  Align-items - horizontal
+  
+  COLUMN al reves */
+
+  /* media query/queries
+  @media (){ } -> condicional, si se cumple una condici[on, entonces se aplica lo que hay dentro de la regla
+   */

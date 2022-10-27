@@ -1,0 +1,29 @@
+.padre{
+    border: 1px dashed brown;
+}
+
+.cuadro{
+    border: 2px solid blue;
+    /* width: 200px;
+    height: 200px;
+    display: block; */
+    /* No pueden exisitr dos elementos bloque en una misma fila */
+}
+.uno{
+    background-color: blue;
+    /* position: relative;
+    Variación de posiciones: top, bottom, right, left 
+        Se mueven respecto a la posición original*/
+    /* Ya casi no se utiliza, porque ahora existe FLEXBOX y GRID */
+}
+.dos{
+    background-color: red;
+    position: absolute;
+    /* absolute = retira el elemento del flujo normal del documento */
+    /* INVESTIGAR z-index: 10;  */
+    left: 10px;
+    bottom: 10px;
+}
+.tres{
+    background-color: green;
+}
