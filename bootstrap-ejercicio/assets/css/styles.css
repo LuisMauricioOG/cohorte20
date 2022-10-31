@@ -1,0 +1,14 @@
+/* Para modificar el tamaño de la barra de navegación con respecto a las imágenes que se colocan */
+.altura-img {
+    height: calc(100vh - 56px);
+}
+h4{
+    text-align: center;
+}
+.card-img-top {
+    height: 200px;
+    width: 200px;
+}
+.card-title{
+    text-align: center;
+}
