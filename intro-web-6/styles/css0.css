@@ -1,5 +1,4 @@
 .container{
-    background-color: blueviolet;
     margin-top: 0px;
 }
 .uno{
@@ -9,5 +8,14 @@
     background-color: bisque;
 }
 .ancho{
-    
+    background-color: coral;
+}
+.nuno{
+    background-color: yellow;
+}
+.ntres{
+    background-color: crimson;
+}
+body{
+    padding: 30px;
 }

@@ -22,15 +22,126 @@
     </div>
         <div class="container">
             <div class="row">
-                <div class="col">1 de 3</div>
-                <div class="col-6">2 de 3 (+ ancho)</div>
-                <div class="col">3 de 3</div>
+                <div class="col nuno">1 de 3</span></div>
+                <div class="col-6 ancho">2 de 3 (+ ancho)</div>
+                <div class="col ntres">3 de 3</div>
             </div>
         </div>
-   
+<!--   Para auto acomodare el contenido
+<div class="container text-center">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      1 of 3
+    </div>
+    <div class="col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+</div>  -->
+<br> <h3>Pruebas</h3>
+<div class="container text-center">
+    <div class="row">
+      <div class="col uno">col 1</div>
+      <div class="col">col 2</div>
+      <div class="col dos">col 3</div>
+      <div class="col">col 4</div>
+    </div>
+    <div class="row">
+      <div class="col-8 ancho">col 5 - 8 espacios</div>
+      <div class="col-4">col 6 - 4 espacios </div>
+    </div>
+  </div>
+  <br>
+  <!-- Colocar botón -->
+<button type="button" class="btn btn-primary">Pulsa aquí</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
 
+<button type="button" class="btn btn-link">Link</button>
+
+<a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+<br>
+<br>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+<br>
+<!-- Alertas -->
+    <div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
+
+  <div id="liveAlertPlaceholder"></div>
+        <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+  
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    ¿De acuerdo?
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Por qué lo tocaste?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Aquí no hay nada.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Por curioso/a/e. Regresa.</button>
+          <button type="button" class="btn btn-primary">Guardar cambios.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
 <!-- Para llamar al archivo js -->    
-    <script src="/bootstrap-5/js/bootstrap.bundle.min.js">   </script>
+    <script src="/bootstrap-5/js/bootstrap.bundle.min.js">   
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+    const alert = (message, type) => {
+      const wrapper = document.createElement('div')
+      wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+      ].join('')
     
+      alertPlaceholder.append(wrapper)
+    }
+    
+    const alertTrigger = document.getElementById('liveAlertBtn')
+    if (alertTrigger) {
+      alertTrigger.addEventListener('click', () => {
+        alert('Nice, you triggered this alert message!', 'success')
+      })
+    }
+    </script>
+
 </body>
 </html>

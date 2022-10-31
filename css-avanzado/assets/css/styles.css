@@ -9,6 +9,8 @@
     font-size: 1.5rem;
 }
 /* Google utiliza 16px. Para modificarlo, podemos hacer 16*1.5 */
+
+/* Para escoger fuentes de Internet */
 .parrafo2{
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;

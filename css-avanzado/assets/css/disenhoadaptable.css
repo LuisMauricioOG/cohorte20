@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+/* We occasionally use media queries that go in the other direction (the given screen size or smaller):
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+Link: https://getbootstrap.com/docs/5.2/layout/breakpoints/#media-queries
+ */
 @media (max-width: 500px){
 .padre{
     border: 3px dashed green;
@@ -27,6 +32,9 @@ img{
     align-items: center;
 }
 }
+  /* media query/queries
+  @media (){ } -> condicional, si se cumple una condición, entonces se aplica lo que hay dentro de la regla
+   */
 .cuadro{
     width: 100px;
     height: 100px;
@@ -49,6 +57,4 @@ img{
   
   COLUMN al reves */
 
-  /* media query/queries
-  @media (){ } -> condicional, si se cumple una condici[on, entonces se aplica lo que hay dentro de la regla
-   */
+
