@@ -5,10 +5,20 @@
 h4{
     text-align: center;
 }
+@media (max-width: 300px){
+    width: 40%
+
 .card-img-top {
-    height: 200px;
-    width: 200px;
+    height: 6rem;
+    width: 5rem;
+    margin: auto;
 }
 .card-title{
     text-align: center;
 }
+}
+/* @media (max-width: 500px){
+width: 60%
+}
+EXPLORAR EL TAMAÑO QUE ME BENEFICIE
+*/
