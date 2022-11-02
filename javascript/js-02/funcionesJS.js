@@ -120,10 +120,40 @@ console.log("El precio total a pagar (incluyendo IVA) es: " + precioTot);
 /* OBJETOS */
 let miObjeto = {
     nombre: "Mau",
-    edad: 26
+    edad: 26,
+    datos: function(){
+        let mensaje = "Tú eres: " + this.nombre;
+        mensaje += ". Tienes " + this.edad + " años.";
+        console.log(mensaje);
+    }
 };
-/* La llamada se llama INSTANCIA */
+miObjeto.datos();
+/* La llamada se llama INSTANCIA (peticion) 
 let mensaje = "Tu nombre es: " + miObjeto.nombre;
-/* Concatenar */
-mensaje += ". Tienes " + miObjeto["edad"] + " años.";
-console.log(mensaje);
+Concatenar
+    mensaje += ". Tienes " + miObjeto["edad"] + " años.";
+    console.log(mensaje);
+*/
+
+/* this hace referencia al atributo del mismo objeto */
+
+/* El CONSTRUCTOR es una funcion que crea un objeto, que contiene metodos y atributos */
+let constructor = function (){
+    let objPersona = {
+        nombre: "Juan",
+        nss: 2357,
+        datosPersona: function () {
+            let nsj = "Eres " + this.nombre + ", el número nss es " + this.nss;
+            console.log(nsj);
+        },
+        otroMetodo: function(jornadaLaboral){
+            let numero8 = 8;
+            console.log("Las horas que has trabajado son: " + 
+            (numero8*jornadaLaboral));
+        }
+    }; 
+    return objPersona;
+}
+let varObjReg = constructor() // crear la variable objeto. NOTA --> No requiero punto y coma.
+varObjReg.datosPersona();
+varObjReg.otroMetodo(5);

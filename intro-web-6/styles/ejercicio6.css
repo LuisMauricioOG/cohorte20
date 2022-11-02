@@ -1,0 +1,17 @@
+h2{
+    color: white;
+    background-color: rgba(0,123,255,255);
+    padding-left: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0px;
+}
+.ngris{
+    color: white;
+    background-color: gray;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+footer{
+    background-color: rgba(23,162,184,255);
+}
