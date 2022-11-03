@@ -12,20 +12,32 @@ Platino se le hará el descuento del 25%
 let precio = Number(prompt("¡Hola! ¿Cuál es el precio de tu artículo?"));
 
 let cupon = prompt("Coloca tu cupón:");
+cupon = cupon.toLowerCase(); //permite cambiar lo que se ingrese a MINUSCULAS
+console.log(cupon);
 
 switch(cupon){
     case "bronce":
-        document.write("Del precio del artículo" + "(" + precio + ")" + ", tienes un 5% de descuento. Por lo tanto, el precio final es: ");
-        document.write();
+        descuento = 0.05;
+        precioConDescuento = precio*(1-descuento);
+        document.write("Del precio del artículo " + "($" + precio + " MXN)" + ", tienes un 5% de descuento. Por lo tanto, el precio final es: " + "$" + precioConDescuento + " MXN.");
         break;
-    case "plata":document.write("Tienes un 10% de descuento.");
+    case "plata":
+        descuento = 0.10;
+        precioConDescuento = precio*(1-descuento);
+        document.write("Del precio del artículo " + "($" + precio + " MXN)" + ", tienes un 10% de descuento. Por lo tanto, el precio final es: " + "$" + precioConDescuento + " MXN.");
         break;
-    case "oro":document.write("Tienes un 20% de descuento.");
+    case "oro":
+        descuento = 0.20;
+        precioConDescuento = precio*(1-descuento);
+        document.write("Del precio del artículo " + "($" + precio + " MXN)" + ", tienes un 20% de descuento. Por lo tanto, el precio final es: " + "$" + precioConDescuento + " MXN.");
         break;
-    case "platino":document.write("Tienes un 25% de descuento.");
+    case "platino":
+        descuento = 0.25;
+        precioConDescuento = precio*(1-descuento);
+        document.write("Del precio del artículo " + "($" + precio + " MXN)" + ", tienes un 25% de descuento. Por lo tanto, el precio final es: " + "$" + precioConDescuento + " MXN.");
         break;
     default:
-        document.write("El cupón no es válido.");
+        document.write("El cupón no fue válido, favor de reescribirlo.");
         break;
 }
 /* 
