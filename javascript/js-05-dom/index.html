@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="etiqueta1">*Ejemplo de DOM*</h1>
+    <!-- <p id="parrafo">Saludos desde el DOM</p>
+    <p id = "otro">Otro párrafo</p> -->
+    <p class="azul">Saludos desde el DOM</p>
+    <p class="azul">Otro párrafo</p>
+    
+    
+    <script>
+        let etiqueta = document.getElementById('etiqueta1');
+        console.log('Valor de etiqueta1: '  + etiqueta.innerHTML);
+   //Si ponemos:   console.log('Valor de etiqueta1: '  + etiqueta);
+   //Nos da:  Valor de etiqueta1: [object HTMLHeadingElement] 
+        /* let parr = document.getElementById('parrafo');
+        console.log('Valor del párrafo: '  + parr.innerHTML);
+        
+        let parrafos = document.getElementsByTagName("p");
+        for (let i=0; parrafos.length; i++){
+            console.log("Número de párrafos: " + parrafos[i].innerHTML);
+        } */
+
+        let parraf = document.getElementsByClassName("azul");
+        for (let f=0; f < parraf.length; f++){
+            console.log("Número de párrafos en color azul: " + parraf[f].innerHTML);
+        }
+
+
+    </script>
+</body>
+</html>

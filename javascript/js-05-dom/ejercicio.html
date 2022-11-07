@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio formulario</title>
+</head>
+<body>
+    <h1>Datos personales</h1>
+    <form id="formulario">
+        Número 1 <input type="number" value="7"> <br>
+        Número 2 <input type="number" value="5">; 
+    </form>
+        <button onclick="mostrarValores()">SUMA</button>
+    <div id="valores"></div>
+    <script>
+        function mostrarValores(){
+            let formulario = document.forms["formulario"]
+            let suma = 0;
+            for (let elemento of formulario){
+                suma += parseInt(elemento.value);
+            }
+            document.getElementById("valores").innerHTML = suma;
+        } 
+    </script>
+</body>
+</html>
