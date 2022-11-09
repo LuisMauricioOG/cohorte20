@@ -7,7 +7,7 @@
     <title>Ejercicio formulario</title>
 </head>
 <body>
-    <h1>Datos personales</h1>
+  <!--   <h1>Datos personales</h1>
     <form id="formulario">
         Número 1 <input type="number" value="7"> <br>
         Número 2 <input type="number" value="5">; 
@@ -19,10 +19,37 @@
             let formulario = document.forms["formulario"]
             let suma = 0;
             for (let elemento of formulario){
-                suma += parseInt(elemento.value);
+                suma += parseInt(elemento.value); /* Recuerda convertir los valores a números */
             }
             document.getElementById("valores").innerHTML = suma;
         } 
+
     </script>
+ -->
+
+<!-- Manejo del document.write 
+<h1>Ejemplo del document.write</h1>
+<button onclick="cambio()">Mostrar</button>
+<script>
+    function cambio(){
+        document.write("Saludos");
+
+
+    }
+    </script>
+-->
+
+<!-- Usando imagenes -->
+<h1>DOM imágenes</h1>
+
+<button onclick="change()">Cambio</button>
+<br>
+<img id="imagen" src="./4G.jpg" alt="frase1">
+
+<script>
+    function change(){
+document.getElementById("imagen").src = "./7G.jpg";
+    }
+</script>
 </body>
 </html>
