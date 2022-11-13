@@ -1,3 +1,4 @@
+
 class Persona {
     constructor (nombre, apellido){
         this._nombre = nombre;
@@ -19,7 +20,7 @@ class Persona {
 class Empleado extends Persona{
    
     constructor(nombre, apellido, empresa){
-        super(nombre, apellido);
+        super(nombre, apellido);//para acceder al padre y poder redifinir a empleado
         this._empresa = empresa;
     }
     set empresa (empresa){
@@ -27,6 +28,12 @@ class Empleado extends Persona{
     }
     get empresa(){
         return this._empresa;
+    } //Sobreescritura del método:
+    nombreCompleto (){
+        return super.nombreCompleto() + ", " + this._empresa;
+    }
+    toString (){
+        return this.nombreCompleto();
     }
 }
 let p1 = new Persona("Hugo", "Sanchez");
@@ -35,4 +42,9 @@ console.log(p1.nombreCompleto);//solo dará la función
 
 let E1 =  new Empleado("Juan", "Escutia", "Coppel");
 
-console.log(E1.nombreCompleto() + ", " + E1.empresa);
+//Antes del cambio de nombreCompleto dentro de la clase empleado, era: console.log(E1.nombreCompleto() + ", " + E1.empresa);
+
+console.log(E1.nombreCompleto());
+
+//Método toString para concatenar; empleando el polimorfismo:
+console.log(E1.toString());
