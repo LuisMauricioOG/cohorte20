@@ -1,0 +1,4 @@
+{
+    "presets":[["@babel/preset-env", {"targets": { "node": "current" } }]]
+ }
+//se configura babel despues con la terminal: npm install --save-dev babel-jest @babel/core @babel/preset-env

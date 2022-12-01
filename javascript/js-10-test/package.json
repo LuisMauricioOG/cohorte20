@@ -1,7 +1,7 @@
 {
-  "name": "primer_proyecto",
+  "name": "package.json",
   "version": "1.0.0",
-  "description": "Mi primer proyecto de npm de mi alegría",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -9,9 +9,9 @@
   "author": "Mau",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
     "jest": "^29.3.1"
-  },
-  "dependencies": {
-    "parrotsay-api": "^0.1.1"
   }
 }

@@ -1,5 +1,6 @@
 console.log("Hola desde node.js")
 /* node js sirve como un intérprete para que podamos usar Javascript fuera del navegador.
+Escribimos node "nombre del archivo" en la terminal y nos sale el resultado.
 
 Una vez instalado nos pasó un comando para instalar desde la terminal "parrotsay" en la que escribías un comando y aparecía un pájaro con ese mismo anuncio, pero después borramos esa instalación solo era para probar npm:
 
@@ -8,6 +9,8 @@ Una vez instalado nos pasó un comando para instalar desde la terminal "parrotsa
     parrotSay('yaaay')
         .then(console.log)
         .catch(console.error)
+        
+//O escribiendo npm install --global parrotsay, luego, colocamos parrotsay "cualquier frase" para que salga un perico diciendo esa frase en la terminal.
 
 En el documento package.json se coloca 
 "dependencies": {
